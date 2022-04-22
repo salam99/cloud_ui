@@ -22,6 +22,6 @@ options:
 substitutions:
   _CLUSTER: 'cluster-1'
   _ZONE: 'us-central1-c'
-  _K8SDEPLOYMENT: 'demo-api'
+  _K8SDEPLOYMENT: 'demo-ui'
   _TAG_NAME: $SHORT_SHA
-  _IMAGE_NAME: 'gcr.io/roidtc-april-2022-u100/internal:${_TAG_NAME}'
+  _IMAGE_NAME: 'gcr.io/roidtc-april-2022-u100/external:${_TAG_NAME}'
