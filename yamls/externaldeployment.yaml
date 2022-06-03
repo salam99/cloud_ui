@@ -14,10 +14,12 @@ spec:
     spec:
       containers:
       - name: demo-ui
-        image: gcr.io/roidtc-april-2022-u100/external:v3
+        image: beachcoder/external:11
         env: 
         - name: SERVER
           value: "http://demo-service:8082"
+        - name: SERVICE_PORT
+          value: "8080"
         ports:
         - containerPort: 8080
             
