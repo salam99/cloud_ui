@@ -1,5 +1,5 @@
-# Use Google base image for NodeJS
-FROM launcher.gcr.io/google/nodejs
+# Use base image for NodeJS
+FROM node:18-alpine
 
 # Copy application code.
 COPY . /app/
@@ -8,7 +8,7 @@ COPY . /app/
 WORKDIR /app
 
 # Install dependencies.
-RUN npm install
+RUN npm ci --omit=dev
 
 # Start the Express app
 CMD ["node", "server.js"]
