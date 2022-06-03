@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-ui
-        image: beachcoder/external:11
+        image: beachcoder/external:12
         env: 
         - name: SERVER
           value: "http://demo-service:8082"
