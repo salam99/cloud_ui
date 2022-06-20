@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo 'Retrieving source from github' 
                 git branch: 'master',
-                    url: 'https://github.com/beachedcoder/4202022_external.git'
+                    url: 'https://github.com/salam99/cloud_ui.git'
                 echo 'Did we get the source?' 
                 sh 'ls -a'
                 echo 'install dependencies' 
